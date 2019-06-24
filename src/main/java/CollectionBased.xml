@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="javaCollection" class="com.core.spring_core.collection.CollectionBased">
+<property name="bankList">
+	<list>
+		<value>Telangana</value>
+		<value>SBI</value>
+		<value>Axis</value>
+	</list>
+</property>
+<property name="bankMap">
+	<map>
+		<entry key="1" value="Telangana"></entry>
+		<entry key="2" value="SBI"></entry>
+		<entry key="3" value="Axis"></entry>
+	</map>
+</property>
+<property name="bankSet">
+	<set>
+		<value>Telangana</value>
+		<value>SBI</value>
+		<value>Axis</value>
+	</set>
+</property>
+<property name="bankProperties">
+	<props>
+	<prop key="INDIA1">SACHINE</prop>
+	<prop key="INDIA2">DRAVID</prop>
+	<prop key="INDIA3">GUNGULY</prop>
+	<prop key="INDIA4">LAXMAN</prop>
+	<prop key="INDIA5">SEHWAG</prop>
+	<prop key="WEST INDIES">LARA</prop>
+	
+	</props>
+
+</property>
+
+</bean>
+
+</beans>

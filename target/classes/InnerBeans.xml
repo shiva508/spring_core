@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dependent" class="com.core.spring_core.innerbean.Dependent">
+	<property name="dependancy">
+		<bean id="dependancy" class="com.core.spring_core.innerbean.Dependancy"></bean>
+	</property>
+</bean>
+<bean id="dependancyCon" class="com.core.spring_core.innerbean.Dependancy"></bean>
+<bean id="dependentCon" class="com.core.spring_core.innerbean.DependentConstructor">
+	<constructor-arg ref="dependancyCon">
+			
+	</constructor-arg>
+</bean>
+
+</beans>

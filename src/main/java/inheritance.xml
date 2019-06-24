@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="parent" class="com.core.spring_core.inheritance.Parent">
+		<property name="message1" value="Parent Message1"></property>
+		<property name="message2" value="Parent Message2"></property>
+	</bean>
+	<bean id="child" class="com.core.spring_core.inheritance.Child"
+		parent="parent">
+		<property name="message1" value="Child Message1"></property>
+		<property name="message3" value="Child Message2"></property>
+	</bean>
+</beans>
