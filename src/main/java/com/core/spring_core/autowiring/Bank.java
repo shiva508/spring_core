@@ -25,6 +25,4 @@ public void setBankName(String bankName) {
 public String toString() {
 	return "Bank [bankId=" + bankId + ", bankName=" + bankName + "]";
 }
-
-
 }
