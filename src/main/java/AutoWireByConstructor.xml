@@ -7,6 +7,6 @@
 		class="com.core.spring_core.autowiring.constructor.BankByConstructorDaoImpl">
 
 	</bean>
-	<bean id="bankByConstructorService" class="com.core.spring_core.autowiring.constructor.BankByConstructorServiceImpl" autowire="byName">
+	<bean id="bankByConstructorService" class="com.core.spring_core.autowiring.constructor.BankByConstructorServiceImpl" autowire="constructor">
 	</bean>
 </beans>

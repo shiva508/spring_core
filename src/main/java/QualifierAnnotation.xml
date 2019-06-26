@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config />
+	<bean id="userDetails"
+		class="com.core.spring_core.annotationbased.Qualifier.UserDetails">
+	</bean>
+	<bean id="userQ1" class="com.core.spring_core.annotationbased.Qualifier.UserQ">
+	<property name="userId" value="508"/>
+	<property name="userName" value="Shiva"/>
+	</bean>
+	<bean id="userQ2" class="com.core.spring_core.annotationbased.Qualifier.UserQ">
+	<property name="userId" value="408"/>
+	<property name="userName" value="Shiva Dasari"/>
+	</bean>
+</beans>

@@ -9,6 +9,7 @@ public class HiMain {
 		AbstractApplicationContext context=new ClassPathXmlApplicationContext("postBeanProcessor.xml");
 		Hi hi=(Hi) context.getBean("hi");
 		System.out.println(hi.getMessage());
+		context.registerShutdownHook();
 		
 	}
 

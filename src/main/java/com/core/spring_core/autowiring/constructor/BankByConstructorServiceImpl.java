@@ -8,11 +8,8 @@ public class BankByConstructorServiceImpl implements BankByConstructorService {
 
 	private BankByConstructorDao bankByConstructorDao;
 
-	public BankByConstructorDao getBankByTypeDao() {
-		return bankByConstructorDao;
-	}
-
-	public void setBankByTypeDao(BankByConstructorDao bankByConstructorDao) {
+	
+	public BankByConstructorServiceImpl(BankByConstructorDao bankByConstructorDao) {
 		this.bankByConstructorDao = bankByConstructorDao;
 	}
 
