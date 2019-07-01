@@ -13,7 +13,6 @@ public class ClientConfig {
 	@Autowired
 	private DataSourceConfig dataSourceConfig;
 	@Bean
-	@Qualifier
 	public Client clientsd() {
 		return new Client(dataSourceConfig.dataSourceBean());
 	}

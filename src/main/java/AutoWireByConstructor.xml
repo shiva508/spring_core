@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="bankByConstructorDao"
-		class="com.core.spring_core.autowiring.constructor.BankByConstructorDaoImpl">
+		class="com.core.spring_core.autowiring.constructor.BankByConstructorDaoImpl" >
 
 	</bean>
 	<bean id="bankByConstructorService" class="com.core.spring_core.autowiring.constructor.BankByConstructorServiceImpl" autowire="constructor">

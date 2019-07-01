@@ -1,6 +1,6 @@
 package com.core.spring_core.di.javabased.configuration;
-
 public class Client {
+	
 private DataSourceBean dataSourceBean;
 
 public Client(DataSourceBean dataSourceBean) {

@@ -9,6 +9,10 @@ public class DataSourceConfig {
 		return new DataSourceBean();
 	}
 	@Bean
+	public DataSourceBean dataSourceBean1() {
+		return new DataSourceBean();
+	}
+	@Bean
 	public Client client() {
 		return new Client(dataSourceBean());
 	}
