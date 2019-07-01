@@ -12,6 +12,7 @@ public class CollectionBasedMain {
 		System.out.println(collectionBased.getBankMap());
 		System.out.println(collectionBased.getBankProperties());
 		System.out.println(collectionBased.getBankSet());
+		System.out.println(collectionBased.getAccoumntMap());
 	}
 
 }

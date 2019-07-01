@@ -18,6 +18,12 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 		<entry key="3" value="Axis"></entry>
 	</map>
 </property>
+<property name="accoumntMap">
+<map>
+<entry key="Abs" value-ref="bankList"></entry>
+</map>
+
+</property>
 <property name="bankSet">
 	<set>
 		<value>Telangana</value>

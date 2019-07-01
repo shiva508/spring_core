@@ -5,11 +5,14 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
+import com.core.spring_core.di.Account;
+
 public class CollectionBased {
 List<String> bankList;
 Map<Integer, String> bankMap;
 Set<String> bankSet;
 Properties bankProperties;
+Map<String, List<String>> accoumntMap;
 public List<String> getBankList() {
 	return bankList;
 }
@@ -33,6 +36,13 @@ public Properties getBankProperties() {
 }
 public void setBankProperties(Properties bankProperties) {
 	this.bankProperties = bankProperties;
+}
+
+public Map<String, List<String>> getAccoumntMap() {
+	return accoumntMap;
+}
+public void setAccoumntMap(Map<String, List<String>> accoumntMap) {
+	this.accoumntMap = accoumntMap;
 }
 @Override
 public String toString() {
