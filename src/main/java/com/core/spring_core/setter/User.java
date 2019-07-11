@@ -19,7 +19,4 @@ public void setUserName(String userName) {
 public String toString() {
 	return "User [userId=" + userId + ", userName=" + userName + "]";
 }
-
-
-
 }
