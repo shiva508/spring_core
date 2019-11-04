@@ -9,4 +9,16 @@ public class PhoneConfig {
 	public Phone phone() {
 		return new Phone();
 	}
+	@Bean
+	public ApplicationContextAwareImpl applicationContextAwareImpl() {
+		return new ApplicationContextAwareImpl();
+	}
+	@Bean
+	public BeanNameAwareImpl beanNameAwareImpl() {
+		return new BeanNameAwareImpl();
+	}
+	@Bean
+	public BeanFactoryAwareImpl beanFactoryAwareImpl() {
+		return new BeanFactoryAwareImpl();
+	}
 }
