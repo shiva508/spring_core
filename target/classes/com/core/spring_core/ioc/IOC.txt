@@ -34,7 +34,18 @@
 -->The container gets its instructions on what objects to instantiate, configure, 
 	and assemble by reading configuration metadata.
 -->The configuration metadata is represented in XML, Java annotations, or Java code.
-
+-->Several implementations of the ApplicationContext interface are supplied with Spring. 
+	In stand-alone applications.
+-->it is common to create an instance of 
+	ClassPathXmlApplicationContext 
+				or 
+	FileSystemXmlApplicationContext. 
+	
+1.2.1. Configuration Metadata
+-->the Spring IoC container consumes a form of configuration metadata. 
+	This configuration metadata represents how you, as an application developer, 
+	tell the Spring container to instantiate, configure, and assemble the objects in your 
+	application.	
 
     
     
