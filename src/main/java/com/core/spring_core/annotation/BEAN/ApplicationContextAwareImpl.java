@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContextAware;
 public class ApplicationContextAwareImpl implements ApplicationContextAware {
 
 	public void setApplicationContext(ApplicationContext context) throws BeansException {
-		Phone phone=	context.getBean(Phone.class);
+		Phone phone = context.getBean(Phone.class);
 		phone.sendMessage();
 
 	}

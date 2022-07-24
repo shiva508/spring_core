@@ -4,7 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 
 public class CustomEventWithApplicationEvent {
-	
+
 	@Bean
 	public CustomEventListnerBean customEventListnerBean() {
 		return new CustomEventListnerBean();

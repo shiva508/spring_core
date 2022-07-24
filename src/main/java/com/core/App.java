@@ -1,4 +1,4 @@
-package com.core.spring_core;
+package com.core;
 
 
 /**

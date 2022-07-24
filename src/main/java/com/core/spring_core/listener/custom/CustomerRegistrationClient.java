@@ -2,7 +2,8 @@ package com.core.spring_core.listener.custom;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
+import org.springframework.context.annotation.Configuration;
+@Configuration
 public class CustomerRegistrationClient {
 	@Autowired
 	private CustomerRegistrationPublisherBean publisherBean;

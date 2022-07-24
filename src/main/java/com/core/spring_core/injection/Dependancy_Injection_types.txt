@@ -1,0 +1,10 @@
+There are three possible ways of DI in Spring
+
+Constructor-based: should be used for mandatory dependencies. In constructor, we should assign constructor args to final member fields.
+
+Setter-based: Should be used for optional dependencies.
+
+Field-based: Spring discourages the use of this because it would possibly hide mandatory fields from outside which would otherwise be
+			assigned in the constructor. This would take away the advantage of properly initialized POJO, specially if intended to use outside of 
+			Spring container. Even though, we are mostly using field based injection in this series of tutorials to simplify the concept we want
+ 			to deliver, we suggest the developers to always avoid using field-based DI in real project scenarios.

@@ -6,8 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerRegistrationEventListener {
 	@EventListener
-	public
-	void handleRegistration(CustomerRegistrationEvent event){
-        System.out.println("Registration event got triggered for customer::  " + event.getName());
-    }
+	public void handleRegistration(CustomerRegistrationEvent event) {
+		System.out.println("Registration event got triggered for customer::  " + event.getName());
+	}
 }
