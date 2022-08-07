@@ -8,7 +8,7 @@ public class BeanFactoryAwareImpl implements BeanFactoryAware {
 
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
 		
-		 System.out.println(beanFactory.getBean(Phone.class));
+		 System.out.println("BeanFactoryAwareImpl:"+beanFactory.getBean(Phone.class));
 	}
 
 }

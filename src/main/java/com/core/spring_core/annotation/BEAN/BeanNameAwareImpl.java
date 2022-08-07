@@ -5,7 +5,7 @@ import org.springframework.beans.factory.BeanNameAware;
 public class BeanNameAwareImpl implements BeanNameAware {
 
 	public void setBeanName(String name) {
-		System.out.println(name);
+		System.out.println("BeanNameAwareImpl"+name);
 
 	}
 
