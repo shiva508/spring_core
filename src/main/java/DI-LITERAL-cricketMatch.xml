@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	default-init-method="initDde" default-destroy-method="destroy"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="oneDayCaption"
+		class="com.core.spring_core.step2.di.literal.OneDayCaption">
+	</bean>
+
+	<bean id="t20Caption"
+		class="com.core.spring_core.step2.di.literal.T20Caption">
+	</bean>
+	<bean id="testCaption"
+		class="com.core.spring_core.step2.di.literal.TestCaption">
+	</bean>
+
+	<bean id="oneDayCoach"
+		class="com.core.spring_core.step2.di.literal.OneDayCoach">
+		<property name="formateType" value="One Day"></property>
+		<property name="coachName" value="Gary Kristen"></property>
+	</bean>
+
+	<bean id="t20Coach"
+		class="com.core.spring_core.step2.di.literal.T20Coach">
+		<property name="formateType" value="T20"></property>
+		<property name="coachName" value="Lara"></property>
+	</bean>
+
+
+	<bean id="testCoach"
+		class="com.core.spring_core.step2.di.literal.TestCoach">
+		<property name="formateType" value="Test"></property>
+		<property name="coachName" value="Dravid"></property>
+	</bean>
+
+	<bean id="oneDayMatch"
+		class="com.core.spring_core.step2.di.literal.OneDayMatch">
+		<property name="oneDayCaption" ref="oneDayCaption"></property>
+		<property name="oneDayCoach" ref="oneDayCoach"></property>
+	</bean>
+
+	<bean id="testMatch"
+		class="com.core.spring_core.step2.di.literal.TestMatch">
+		<property name="testCaption" ref="testCaption"></property>
+		<property name="testCoach" ref="testCoach"></property>
+	</bean>
+
+	<bean id="t20Match"
+		class="com.core.spring_core.step2.di.literal.T20Match">
+		<property name="t20Caption" ref="t20Caption"></property>
+		<property name="t20Coach" ref="t20Coach"></property>
+	</bean>
+
+
+</beans>

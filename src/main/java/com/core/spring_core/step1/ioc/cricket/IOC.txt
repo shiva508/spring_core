@@ -1,0 +1,19 @@
+Step 1:Configuring our Spring Bean
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	default-init-method="initDde" default-destroy-method="destroy"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="lifeCycle"
+		class="com.core.spring_core.lifecycle.LyfeCycle" >
+	</bean>
+</beans>
+Step 2:Create Spring Container -Application context
+	1.ClasspathXMLApplicationContext
+	2.AnnotationConfigApplicationContext
+Step 3:Access Spring bean from context
+
+ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("cricketMatch.xml");
+		Match oneDayMatch=context.getBean("oneDayMatch", Match.class);
+		oneDayMatch.playMatch();
+	
